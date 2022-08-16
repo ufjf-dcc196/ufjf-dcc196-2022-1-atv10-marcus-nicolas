@@ -1,5 +1,9 @@
 package br.ufjf.dcc196.marcusviniciux1.listadecompras;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
@@ -28,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements ListaCategoriasAd
     private RecyclerView recyclerView;
     private ListaCategoriasAdapter listaCategoriasAdapter;
     private Categoria categoriaParaEditar;
+    ActivityResultLauncher<Intent> launcher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,9 +49,27 @@ public class MainActivity extends AppCompatActivity implements ListaCategoriasAd
                 showAddDialogoCategoria(false);
             }
         });
+
+        ImageView creditos = findViewById(R.id.creditosImageView);
+        creditos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Creditos.class);
+                launcher.launch(intent);
+            }
+        });
+
         iniciarViewModel();
         iniciarRecyclerView();
         viewModel.getTodasListasDeCategoria();
+
+        launcher = registerForActivityResult(
+                new ActivityResultContracts.StartActivityForResult(),
+                new ActivityResultCallback<ActivityResult>() {
+                    @Override
+                    public void onActivityResult(ActivityResult result) {
+                    }
+                });
     }
 
     private void iniciarRecyclerView() {

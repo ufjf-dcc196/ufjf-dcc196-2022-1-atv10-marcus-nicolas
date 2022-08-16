@@ -3,12 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Vinicius/AndroidStudioProjects/ListaDeCompras2/app/src/main/res/drawable/ic_info_black.xml" value="0.145" />
+        <entry key="..\:/Users/Vinicius/AndroidStudioProjects/ListaDeCompras2/app/src/main/res/layout/activity_creditos.xml" value="0.1" />
         <entry key="..\:/Users/Vinicius/AndroidStudioProjects/ListaDeCompras2/app/src/main/res/layout/activity_main.xml" value="0.75" />
         <entry key="..\:/Users/Vinicius/AndroidStudioProjects/ListaDeCompras2/app/src/main/res/layout/add_categoria_layout.xml" value="0.25" />
-        <entry key="..\:/Users/morae/AndroidStudioProjects/ufjf-dcc196-2022-1-atv10-marcus-nicolas/app/src/main/res/layout/activity_lista_de_itens.xml" value="0.365625" />
-        <entry key="..\:/Users/morae/AndroidStudioProjects/ufjf-dcc196-2022-1-atv10-marcus-nicolas/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/morae/AndroidStudioProjects/ufjf-dcc196-2022-1-atv10-marcus-nicolas/app/src/main/res/layout/add_categoria_layout.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/morae/AndroidStudioProjects/ufjf-dcc196-2022-1-atv10-marcus-nicolas/app/src/main/res/layout/recyclerview_row.xml" value="0.365625" />
       </map>
     </option>
   </component>

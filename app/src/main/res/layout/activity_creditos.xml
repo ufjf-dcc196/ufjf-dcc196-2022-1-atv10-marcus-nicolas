@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Creditos">
+
+    <TextView
+        android:id="@+id/emailNTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="nicolas.moraes@estudante.ufjf.br"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/matriculaNTextView"
+        app:layout_constraintStart_toStartOf="@+id/matriculaNTextView"
+        app:layout_constraintTop_toBottomOf="@+id/matriculaNTextView" />
+
+    <TextView
+        android:id="@+id/nomeNTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Nícolas Moraes"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/emailMVTextView"
+        app:layout_constraintStart_toStartOf="@+id/emailMVTextView"
+        app:layout_constraintTop_toBottomOf="@+id/emailMVTextView" />
+
+    <TextView
+        android:id="@+id/matriculaNTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Matrícula: 201976038"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/nomeNTextView"
+        app:layout_constraintStart_toStartOf="@+id/nomeNTextView"
+        app:layout_constraintTop_toBottomOf="@+id/nomeNTextView" />
+
+    <TextView
+        android:id="@+id/desenvolvedoresTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Desenvolvedores"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nomeMVTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Marcus Vinícius Rodrigues da Silva"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desenvolvedoresTextView" />
+
+    <TextView
+        android:id="@+id/matriculaMVTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Matrícula: 201976010"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/nomeMVTextView"
+        app:layout_constraintStart_toStartOf="@+id/nomeMVTextView"
+        app:layout_constraintTop_toBottomOf="@+id/nomeMVTextView" />
+
+    <TextView
+        android:id="@+id/emailMVTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="marcusvinicius.rodrigues@estudante.ufjf.br "
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/matriculaMVTextView"
+        app:layout_constraintStart_toStartOf="@+id/matriculaMVTextView"
+        app:layout_constraintTop_toBottomOf="@+id/matriculaMVTextView" />
+
+    <ImageView
+        android:id="@+id/voltarImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="100dp"
+        android:onClick="creditosVoltarClick"
+        android:src="@drawable/ic_undo_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
