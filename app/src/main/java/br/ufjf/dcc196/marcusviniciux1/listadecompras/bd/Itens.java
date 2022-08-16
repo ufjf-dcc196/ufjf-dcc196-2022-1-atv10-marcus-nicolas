@@ -9,7 +9,7 @@ public class Itens {
     @PrimaryKey(autoGenerate = true)
     public int uid;
     @ColumnInfo(name = "nomeItem")
-    public String itemName;
+    public String nomeItem;
     @ColumnInfo(name = "idCategoria")
     public int idCategoria;
     @ColumnInfo(name = "completo")

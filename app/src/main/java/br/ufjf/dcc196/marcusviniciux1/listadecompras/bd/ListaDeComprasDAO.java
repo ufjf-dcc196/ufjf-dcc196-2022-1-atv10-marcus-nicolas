@@ -32,5 +32,5 @@ public interface ListaDeComprasDAO {
     void atualizarItens(Itens itens);
 
     @Delete
-    void deleteItens(Itens itens);
+    void deletarItens(Itens itens);
 }
