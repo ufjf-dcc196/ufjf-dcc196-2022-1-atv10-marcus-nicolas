@@ -9,6 +9,7 @@ import androidx.room.RoomDatabase;
 @Database(entities = {Categoria.class, Itens.class}, version = 1)
 
 public abstract class AppDatabase extends RoomDatabase {
+    public abstract ListaDeComprasDAO listaDeComprasDAO();
     public static AppDatabase INSTANCIA;
 
     public static AppDatabase getDBinstancia(Context contexto) {
