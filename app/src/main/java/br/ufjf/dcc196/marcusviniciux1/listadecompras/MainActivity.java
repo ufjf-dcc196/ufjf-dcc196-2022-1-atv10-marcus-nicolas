@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.content.Intent;
 
 
 import java.util.List;
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements ListaCategoriasAd
         });
         iniciarViewModel();
         iniciarRecyclerView();
+        viewModel.getTodasListasDeCategoria();
     }
 
     private void iniciarRecyclerView() {
@@ -113,7 +115,11 @@ public class MainActivity extends AppCompatActivity implements ListaCategoriasAd
 
     @Override
     public void itemClick(Categoria categoria) {
+        Intent intent = new Intent(MainActivity.this, ListaDeItens.class);
+        intent.putExtra("id_categoria", categoria.uid);
+        intent.putExtra("nome_categoria", categoria.nomeCategoria);
 
+        startActivity(intent);
     }
 
     @Override

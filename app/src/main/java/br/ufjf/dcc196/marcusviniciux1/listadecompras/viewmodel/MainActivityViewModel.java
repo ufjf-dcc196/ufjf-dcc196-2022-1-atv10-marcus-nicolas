@@ -42,13 +42,13 @@ public class MainActivityViewModel extends AndroidViewModel {
         getTodasListasDeCategoria();
     }
 
-    public void atualizarCategoria(Categoria category) {
-        appDatabase.listaDeComprasDAO().atualizarCategoria(category);
+    public void atualizarCategoria(Categoria categoria) {
+        appDatabase.listaDeComprasDAO().atualizarCategoria(categoria);
         getTodasListasDeCategoria();
     }
 
-    public void deletarCategoria(Categoria category) {
-        appDatabase.listaDeComprasDAO().deletarCategoria(category);
+    public void deletarCategoria(Categoria categoria) {
+        appDatabase.listaDeComprasDAO().deletarCategoria(categoria);
         getTodasListasDeCategoria();
     }
 }
